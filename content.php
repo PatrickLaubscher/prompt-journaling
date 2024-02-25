@@ -1,7 +1,7 @@
 <?php
 require 'bdd.php';
 
-$id = round(rand(1,5));
+$id = round(rand(1,2));
 
 $sql =  "SELECT p.*
         FROM phrase p

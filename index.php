@@ -14,7 +14,10 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js" defer></script>
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>The Diarist</title>
   </head>
 
   <body>
@@ -25,7 +28,7 @@
    
       <!-- Menu navigation -->
       
-      <nav class="navbar navbar-expand-lg bg-secondary">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">LOGO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,23 +37,13 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" title="Accueil">Accueil</a>
+                <a class="nav-link barlow-r" aria-current="page" href="index.html" title="Accueil">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" title="">Features</a>
+                <a class="nav-link barlow-r" href="#" title="">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" title="">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link barlow-r" href="#" title="">Pricing</a>
               </li>
             </ul>
           </div>

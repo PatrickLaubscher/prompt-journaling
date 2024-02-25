@@ -3,7 +3,7 @@
 $dbservername = 'localhost';
 $dbusername = 'root';
 $dbpassword = '';
-$dbname = 'prompt_content';
+$dbname = 'prompt_journaling';
 
 //On établit la connexion
     $db = new PDO("mysql:host=$dbservername;dbname=$dbname", $dbusername, $dbpassword);

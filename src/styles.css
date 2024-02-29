@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg: #FFFEFB;
+    --yellow1: #FFD600;
+    --yellow2: #f8dc4f;
+
+}
+
+body, nav {
+    background-color: var(--bg);
+    color: black;
+}
+
+h1 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+a,li {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-r {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.barlow-m {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+}
+
+p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Loading animation */
+
+
+@keyframes loadTop{
+    from{opacity: 0; transform: translateY(-100%);}
+    to{opacity: 1;transform: translateY(0%);}
+}
+
+@keyframes loadDown{
+    from{opacity: 0; transform: translateY(100%);}
+    to{opacity: 1;transform: translateY(0%);}
+}
+
+@keyframes loadLeft{
+    from{opacity: 0; transform: translate(-100%);}
+    to{opacity: 1;transform: translate(0%);}
+}
+
+@keyframes loadRight{
+    from{opacity: 0; transform: translate(100%);}
+    to{opacity: 1;transform: translate(0%);}
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.load-top {
+    animation: loadTop 1s ease;
+}
+
+.load-down {
+    animation: loadDown 1s ease;
+}
+
+.load-left {
+    animation: loadLeft 1s ease;
+}
+
+.load-right {
+    animation: loadRight 1s ease;
+}
+
+.fade-in {
+animation: fadeIn 1s ease-in;
+}
+
+

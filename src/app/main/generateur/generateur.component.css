@@ -1,0 +1,18 @@
+
+@keyframes loadPhrase {
+    from{letter-spacing: 30px;}
+    to{letter-spacing: 0px;}
+}
+
+.animation-text {
+    animation: loadPhrase 1s ease 0.5s;
+}
+
+.btn-generator {
+    background-color: var(--yellow1);
+}
+
+.btn-generator:hover {
+    background-color: var(--yellow2);
+    transition: all ease 0.5s;
+}

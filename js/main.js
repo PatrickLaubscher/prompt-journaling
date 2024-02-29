@@ -1,7 +1,8 @@
 
 function fetchContent () {
 
-    idNb = Math.floor(Math.random() * 5) + 1;
+    idNb = Math.floor(Math.random() * 2) + 1;
+
 
     $.ajax({
         type: "POST",
@@ -15,6 +16,8 @@ function fetchContent () {
             console.error("Erreur AJAX:", error);
         }
     });
+
+    
 
 };
 

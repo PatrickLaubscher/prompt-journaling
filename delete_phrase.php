@@ -5,16 +5,16 @@ require_once 'connexion.php';
 
 $reponse = array();
 
-if(isset($_POST['add_phrase'])){
+if(isset($_POST['id'])){
 
-    $text = $_POST['add_phrase'];
+    $id = $_POST['id'];
 
-    $query = $con->prepare("INSERT INTO phrase(phrase_text) VALUES ('$text') ");
+    $query = $con->prepare("DELETE FROM phrase WHERE phrase_id=$id ");
 
     if($query->execute()){
         
         $reponse['error'] = false;
-        $reponse['message'] = "La création a été exécutée avec succès";
+        $reponse['message'] = "La phrase a bien été supprimée.";
 
 
     } else {
@@ -25,3 +25,4 @@ if(isset($_POST['add_phrase'])){
 
 
 }
+

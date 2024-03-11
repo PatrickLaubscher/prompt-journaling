@@ -34,14 +34,25 @@ $query = $con->prepare("SELECT * FROM phrase");
        
     }
 
+    if(isset($_GET['id'])){
 
-    // afficher les données 
-
-
- 
-
+        $id = $_GET['id'];
     
-
-   
+        $query = $con->prepare("SELECT phrase_id, phrase_text FROM phrase WHERE phrase_id=$id ");
+    
+        if($query->execute()){
+            
+            $reponse['error'] = false;
+            $reponse['message'] = "La phrase a bien été supprimée.";
+    
+    
+        } else {
+            $reponse['error'] = true;
+            $reponse['message'] = "Impossible d'exécuter cette requète";
+    
+        }
+    
+    
+    }
 
 ?>
